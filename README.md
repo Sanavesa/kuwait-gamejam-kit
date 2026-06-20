@@ -28,7 +28,6 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 > |---|---|
 > | **Blank screen / something's broken** | Press **F12** → **Console** tab → copy the red error → `/fix` and paste it (or drag in a screenshot). |
 > | **A change made it worse** | `/undo`, then try again in a smaller step. |
-> | **Still stuck after a few minutes** | Raise your hand. 🙋 |
 
 ---
 
