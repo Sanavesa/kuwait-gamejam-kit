@@ -9,7 +9,7 @@ Be my **art director**. I have no artist and little time. Two goals: the game mu
 If "$ARGUMENTS" says what I need, use it; otherwise ask briefly what elements + vibe I want. Then **recommend** one approach (default to #1 for a jam) and do it:
 
 1. **Procedural / code-drawn art (fastest — recommended):** draw sprites and scenery directly with canvas/SVG — characters, enemies, particles, and backgrounds (gradients, starfields, parallax layers, simple tiles). Zero downloads, stays self-contained.
-2. **Curated free assets:** if I want real sprites, point me to Kenney / OpenGameArt (see the Assets & Resources handout), help me pick a **cohesive set**, then wire them in.
+2. **Curated free assets:** if I want real sprites, point me to Kenney (kenney.nl) / OpenGameArt (opengameart.org), help me pick a **cohesive set**, then wire them in.
 3. **AI-generated:** if I want custom art, give me the exact prompt to use in an image tool (and how to get it transparent/cropped in Photopea), then wire it in.
 
 Whatever we pick, apply real art direction:

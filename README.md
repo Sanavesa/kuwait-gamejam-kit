@@ -4,7 +4,7 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 
 > **You only need 5 to start:** `/brainstorm` → `/new-game` → build with `/fix` + `/checkpoint` → `/juice` → `/ship`. The rest are there when you reach for them.
 >
-> 👉 **New here? Jump to the [Walkthrough](#walkthrough--your-first-game-start-to-finish) below** — a friendly start-to-finish guide. Want the one-page quick reference to print/pin? [`KIT_CHEATSHEET.md`](../handouts/KIT_CHEATSHEET.md). The method behind it all: [`../WORKFLOW.md`](../WORKFLOW.md).
+> 👉 **New here? Jump to the [Walkthrough](#walkthrough--your-first-game-start-to-finish) below** — a friendly start-to-finish guide.
 
 ---
 
@@ -23,7 +23,7 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 7. **Write your page — `/page`.** Drafts your whole itch.io submission page, ready to paste.
 8. **Ship it — `/ship`.** Zips the game correctly for itch.io + an upload checklist. **Upload early, then keep improving and re-ship.**
 
-> **Stuck?** Blank screen → **F12** → Console → copy the red error → `/fix` (paste it), or drag in a screenshot. A change made it worse → `/undo`, then a smaller step. Still stuck after a few minutes → raise your hand. (Full debugging: [`../handouts/BUILD_AND_DEBUG.md`](../handouts/BUILD_AND_DEBUG.md).)
+> **Stuck?** Blank screen → **F12** → Console → copy the red error → `/fix` (paste it), or drag in a screenshot. A change made it worse → `/undo`, then a smaller step. Still stuck after a few minutes → raise your hand.
 
 ---
 
@@ -75,12 +75,10 @@ This folder is a Claude Code **marketplace**. The org publishes it as a public g
 /plugin marketplace add Sanavesa/kuwait-gamejam-kit
 /plugin install gamejam@kuwait-gamejam
 ```
-Done — all 16 commands + the primer are live in every project.
+Done — all 15 commands + the primer are live in every project.
 
 ### Offline / no-GitHub fallback
 Copy `plugins/gamejam/commands/` into your game folder as `.claude/commands/`. Same commands. (A folder of command files is the original, rock-solid mechanism; the plugin just wraps it.)
-
-> **Org TODO before the event:** push `starter-kit/` to a public repo, set `REPLACE_WITH_ORG_EMAIL` in [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json), and test both installs on a clean machine. Pin the install snippet in Discord + on the Setup handout.
 
 ---
 
@@ -94,7 +92,9 @@ Copy `plugins/gamejam/commands/` into your game folder as `.claude/commands/`. S
 
 ## What's in here (for maintainers)
 ```
-starter-kit/
+kuwait-gamejam-kit/
+├── README.md                             # this file (install + walkthrough)
+├── LICENSE                               # MIT
 ├── .claude-plugin/
 │   └── marketplace.json              # catalog: lists "gamejam"
 └── plugins/
