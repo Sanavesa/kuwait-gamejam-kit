@@ -31,6 +31,6 @@ Get my game fully ready to submit to the itch.io jam — in one pass, produce th
 - [ ] **Submit.**
 - [ ] Open the game **from the jam page** and confirm it actually plays.
 
-If the in-game **how-to-play** is missing or weak, suggest running `/menu` so the controls also appear *inside* the game, not just on the page.
+If the game is missing a **title screen, how-to-play, or game-over/restart**, offer to add that game shell now (built as clean game states, with an iframe-safe high score) — it's cheap presentation points, and the controls then also appear *inside* the game, not just on the page.
 
 Remind me: upload a working version **early**, then re-run this command to re-zip and refresh the page text as I keep polishing.

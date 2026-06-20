@@ -1,6 +1,6 @@
 # Game Jam Kit — the focused Claude Code plugin for beginners
 
-A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam — **idea → build → polish → ship** — into **10 one-word commands** and primes every session into "game-jam mode." No engine, no build tools, no clutter.
+A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam — **idea → build → polish → ship** — into **9 one-word commands** and primes every session into "game-jam mode." No engine, no build tools, no clutter.
 
 > **You only need 5 to start:** `/brainstorm` → `/new-game` → build with `/fix` + `/checkpoint` → `/juice` → `/submit`. The rest are there when you reach for them.
 >
@@ -18,7 +18,7 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 2. **Build the first playable version — `/new-game <your idea in one line>`.** Claude writes a complete `index.html`, tells you how to open it, writes a short `CLAUDE.md` "memory" so it remembers your game across sessions, and saves your first checkpoint. **Open it in your browser and play. 🎉**
 3. **Its memory stays current on its own.** Your game already has a `CLAUDE.md` from step 2, and Claude keeps it in sync as the game changes — you don't maintain it. (You can still nudge it any time: *"update the game brief: the theme is underwater."*)
 4. **The build loop — make it yours (no command needed).** Adding features is just *talking*: ask in plain words (*"add a double jump"*, *"make the pipes spawn slower"*, *"add a score +1 per pipe"*). Claude keeps each change small, won't break what already works, and reminds you to play + checkpoint — that discipline is built into every session. Play after **every** change. Like it? `/checkpoint score works`. Broke it? `/fix the bird falls through the floor` or `/undo`.
-5. **Make it feel & look good** (where the points are): `/juice` (shake, particles, pops) · `/sound` (SFX + music in code) · `/art` (cohesive look, or wire in an image) · `/menu` (title, pause, game over). Run one at a time, play, `/checkpoint`. *(Crisp scaling to any screen is already built in — ask if you also want touch controls or fullscreen.)*
+5. **Make it feel & look good** (where the points are): `/juice` (shake, particles, pops) · `/sound` (SFX + music in code) · `/art` (cohesive look, or wire in an image). Run one at a time, play, `/checkpoint`. *(Need a title / pause / game-over screen? Just ask — Claude builds the whole game shell, with a saved high score, as proper states. Crisp scaling to any screen is already built in.)*
 6. **Playtest it — with real humans.** Hand it to a friend and *say nothing* — watch where they get confused; that's your fix list. (You're the first playtester too: do the first 30 seconds make sense with no instructions?) Fix what you saw with `/fix` and `/juice`.
 7. **Submit it — `/submit`.** One command does the whole submission: zips the game correctly for itch.io, drafts your full page text (premise, controls, credits) ready to paste, and prints the upload checklist. **Upload early, then keep improving and re-run it.**
 
@@ -32,7 +32,7 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 
 ---
 
-## Commands (10)
+## Commands (9)
 
 **Ideate**
 | Command | Does |
@@ -53,7 +53,6 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 | `/juice [moment]` | Game feel: screen shake, particles, pops, hit-pause, flashes. |
 | `/sound [what]` | Generates sound effects **and** looping music **in code** (Web Audio) — no downloads. |
 | `/art [what]` | Creates cohesive art with no artist (procedural/code-drawn, palette) **or wires in a file you added**. |
-| `/menu [title]` | The whole game shell (not just a menu): title screen, how-to-play, pause, game-over + saved high score, and restart — wired as proper game states. `[title]` is your game's name; it'll ask if you skip it. |
 
 **Ship**
 | Command | Does |
@@ -72,7 +71,7 @@ This folder is a Claude Code **marketplace**. The org publishes it as a public g
 /plugin marketplace add Sanavesa/kuwait-gamejam-kit
 /plugin install gamejam@kuwait-gamejam
 ```
-Done — all 10 commands are live in every project.
+Done — all 9 commands are live in every project.
 
 ### Offline / no-GitHub fallback
 Copy `plugins/gamejam/commands/` into your game folder as `.claude/commands/`. Same commands. (A folder of command files is the original, rock-solid mechanism; the plugin just wraps it.)

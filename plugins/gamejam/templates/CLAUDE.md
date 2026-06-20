@@ -37,12 +37,13 @@ How to build:
 - **Version control = my save points.** Use git locally (set a local identity if none exists so commits never fail; add a small `.gitignore`). Make **concise, meaningful commits** — short imperative messages like *"Add score"*, *"Fix restart bug"* — each one a working state. Roll back **non-destructively** (restore files; never delete my checkpoint history) and stay **local** (don't push unless I ask).
 - **Keep this brief current yourself.** When a change meaningfully alters what's written above (the core mechanic, controls, win/lose, look & feel, or theme), update this `CLAUDE.md` as part of that change and tell me in one line — don't wait for me to ask. Skip it for small tweaks; the brief should stay short and stable, not churn every turn.
 - "**Ugly first, plays well second, pretty last.**" Get the core loop fun before making it pretty or big.
-- Proactively **suggest the right kit command** for what I'm doing (e.g. `/juice`, `/sound`, `/art`, `/menu`, `/submit`).
+- Proactively **suggest the right kit command** for what I'm doing (e.g. `/juice`, `/sound`, `/art`, `/submit`).
 - For a stubborn bug, debug systematically (reproduce → isolate → smallest fix → verify).
 
 Quality bar:
 - Keep performance smooth: cap particle/object counts, reuse objects instead of creating thousands, one `requestAnimationFrame` loop, and **reset all state cleanly on restart**.
 - **Keep it responsive and crisp by default** (maintain this as the game grows, don't bolt it on at the end): run logic in a fixed virtual resolution and scale only the rendering to fit the window while keeping aspect ratio, handle `devicePixelRatio` so it's never blurry, and update on resize without resetting. Offer touch controls + a fullscreen toggle later if the game suits a phone.
 - **Make it survive the itch.io iframe** (where judges play): wrap any `localStorage` use in `try/catch` with an in-memory fallback (it can throw in the sandboxed iframe), `preventDefault()` on the game's keys (arrows/space) so they drive the game instead of scrolling the page, and make sure the first click/keypress both focuses the game **and** resumes audio.
+- **Build the game shell — cheap presentation points beginners skip.** When the game has no front-end, proactively offer to add one, built as clean game **states** (e.g. `MENU / PLAYING / PAUSED / GAMEOVER`) rather than everything at once: a **title screen** + how-to-play, **pause** (P/Esc) that truly freezes, and a **game-over** screen with **restart that fully resets state** and a **high score** (wrapped in the `try/catch` iframe rule above). Add smooth transitions so it feels finished.
 - If something breaks, make the **smallest fix** that works and explain what was wrong in one plain sentence.
 - Remind me to **credit any third-party/AI assets** and to **upload a working build early**.
