@@ -1,6 +1,6 @@
 # Game Jam Kit — the focused Claude Code plugin for beginners
 
-A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam — **idea → plan → build → polish → ship** — into **15 one-word commands** and primes every session into "game-jam mode." No engine, no build tools, no clutter.
+A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam — **idea → build → polish → ship** — into **12 one-word commands** and primes every session into "game-jam mode." No engine, no build tools, no clutter.
 
 > **You only need 5 to start:** `/brainstorm` → `/new-game` → build with `/fix` + `/checkpoint` → `/juice` → `/ship`. The rest are there when you reach for them.
 >
@@ -14,9 +14,9 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 
 *(Install the kit first — see [Install](#install) below — then:)*
 
-1. **Find an idea — `/brainstorm`.** Claude asks your theme + the feeling you want, then suggests small, finishable ideas and helps you pick one. *(Working from a jam theme? Start with `/theme <the theme>` to explore angles, then `/brainstorm`.)*
-2. **Build the first playable version — `/new-game <your idea in one line>`.** Claude writes a complete `index.html`, tells you how to open it, and saves your first checkpoint. **Open it in your browser and play. 🎉**
-3. **Give Claude a memory — `/brief`.** Writes a short `CLAUDE.md` so Claude remembers your game (what it is, controls, style) across sessions.
+1. **Find an idea — `/brainstorm <the jam theme>`.** Claude cracks the theme into fresh angles, asks the feeling you want, then suggests small, finishable ideas and helps you pick one.
+2. **Build the first playable version — `/new-game <your idea in one line>`.** Claude writes a complete `index.html`, tells you how to open it, writes a short `CLAUDE.md` "memory" so it remembers your game across sessions, and saves your first checkpoint. **Open it in your browser and play. 🎉**
+3. **Keep its memory current.** Your game already has a `CLAUDE.md` from step 2 — whenever it changes a lot, just say *"update the game brief: the theme is underwater"* so Claude stays in sync.
 4. **The build loop — make it yours.** One small change at a time, in plain words (*"make the pipes spawn slower"*, *"add a score +1 per pipe"*). Play after **every** change. Like it? `/checkpoint score works`. Broke it? `/fix the bird falls through the floor` or `/undo`.
 5. **Make it feel & look good** (where the points are): `/juice` (shake, particles, pops) · `/sound` (SFX + music in code) · `/art` (cohesive look, or wire in an image) · `/menu` (title, pause, game over) · `/responsive` (fit any screen). Run one at a time, play, `/checkpoint`.
 6. **Playtest it — with real humans.** Hand it to a friend and *say nothing* — watch where they get confused; that's your fix list. (You're the first playtester too: do the first 30 seconds make sense with no instructions?) Fix what you saw with `/fix` and `/juice`.
@@ -27,20 +27,17 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 
 ---
 
-## Commands (15)
+## Commands (12)
 
-**Ideate & plan**
+**Ideate**
 | Command | Does |
 |---|---|
-| `/theme <theme>` | Cracks the jam theme — literal/metaphor/opposite/lateral angles, kills clichés, makes the game read as on-theme; feeds `/brainstorm`. |
-| `/brainstorm [theme]` | Guided ideation using game-design theory (**MDA**) — questions → one small, fun, finishable idea. |
-| `/plan [hours]` | Build order (vertical-slice-first, MoSCoW, time-boxed) **— or mid-jam triage** to a Minimum Finishable Version when you're behind. |
+| `/brainstorm [theme]` | Cracks the jam theme (angles, clichés to dodge) **then** guides ideation with game-design theory (**MDA**) → one small, fun, finishable idea. |
 
 **Build**
 | Command | Does |
 |---|---|
-| `/new-game <idea>` | Scaffolds a playable single-file `index.html`, sets up git, saves the first checkpoint. |
-| `/brief [idea]` | Writes a `CLAUDE.md` "brain" so Claude stays expert + consistent across sessions. |
+| `/new-game <idea>` | Scaffolds a playable single-file `index.html`, writes a `CLAUDE.md` game brief, sets up git, saves the first checkpoint. |
 | `/checkpoint <name>` | Saves a git "save point." |
 | `/undo [name]` | Rolls back to the last (or a named) checkpoint. |
 | `/fix <error/bug>` | Paste a console error or describe the bug; smallest fix, escalating to systematic debugging if needed. |
@@ -75,7 +72,7 @@ This folder is a Claude Code **marketplace**. The org publishes it as a public g
 /plugin marketplace add Sanavesa/kuwait-gamejam-kit
 /plugin install gamejam@kuwait-gamejam
 ```
-Done — all 15 commands + the primer are live in every project.
+Done — all 12 commands + the primer are live in every project.
 
 ### Offline / no-GitHub fallback
 Copy `plugins/gamejam/commands/` into your game folder as `.claude/commands/`. Same commands. (A folder of command files is the original, rock-solid mechanism; the plugin just wraps it.)
@@ -100,8 +97,8 @@ kuwait-gamejam-kit/
 └── plugins/
     └── gamejam/                       # the core plugin
         ├── .claude-plugin/plugin.json
-        ├── commands/                  # 15 slash commands (auto-discovered)
+        ├── commands/                  # 12 slash commands (auto-discovered)
         ├── hooks/hooks.json           # SessionStart "game-jam mode" primer
-        └── templates/CLAUDE.md        # reference game-brief (the /brief command writes this)
+        └── templates/CLAUDE.md        # reference game-brief (/new-game writes this)
 ```
 Each command is plain Markdown with YAML frontmatter — the documented Claude Code format. Edit a file to change behavior; bump `version` in the manifests to ship an update.

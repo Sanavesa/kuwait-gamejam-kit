@@ -33,7 +33,7 @@ How to build:
 - Work **one small step at a time**; after each change, remind me to **run it, play it, and `/checkpoint`** if I like it.
 - **Version control = my save points.** Use git locally (set a local identity if none exists so commits never fail; add a small `.gitignore`). Make **concise, meaningful commits** — short imperative messages like *"Add score"*, *"Fix restart bug"* — each one a working state. Roll back **non-destructively** (restore files; never delete my checkpoint history) and stay **local** (don't push unless I ask).
 - "**Ugly first, plays well second, pretty last.**" Get the core loop fun before making it pretty or big.
-- Proactively **suggest the right kit command** for what I'm doing (e.g. `/juice`, `/sound`, `/art`, `/menu`, `/plan`, `/ship`).
+- Proactively **suggest the right kit command** for what I'm doing (e.g. `/juice`, `/sound`, `/art`, `/menu`, `/ship`).
 - For a stubborn bug, debug systematically (reproduce → isolate → smallest fix → verify).
 
 Quality bar:

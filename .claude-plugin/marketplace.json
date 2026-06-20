@@ -9,7 +9,7 @@
     {
       "name": "gamejam",
       "source": "./plugins/gamejam",
-      "description": "A focused game-jam toolkit for beginners: 15 commands covering the whole jam (/theme /brainstorm /plan /new-game /brief /checkpoint /undo /fix /juice /sound /art /menu /responsive /page /ship) plus a session primer that keeps Claude in game-jam mode.",
+      "description": "A focused game-jam toolkit for beginners: 12 commands covering the whole jam (/brainstorm /new-game /checkpoint /undo /fix /juice /sound /art /menu /responsive /page /ship) plus a session primer that keeps Claude in game-jam mode.",
       "version": "0.1.0",
       "category": "learning",
       "author": {
