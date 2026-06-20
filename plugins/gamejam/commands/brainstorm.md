@@ -38,6 +38,6 @@ Keep all three genuinely **small**.
 
 **Step 6 — Sharpen the winner.** For my chosen idea, write a tight concept: a one-paragraph pitch · the single defining mechanic · the core loop (what the player repeats) · how you win/lose · the look & feel. Suggest concrete ways the **theme shows up** in the **mechanic**, **goal**, **visuals**, and **title/framing** — so a judge *gets it within the first 30 seconds*. Ask if I want to lock it in.
 
-**Step 7 — Hand off.** When I'm happy, offer to run **/new-game** to start building it (it scaffolds the game and saves this concept as a `CLAUDE.md` game brief so you remember the plan as we build).
+**Step 7 — Save it & hand off.** When I lock in the concept, **save it right now to a short `CLAUDE.md` game brief** — what the game is, the one core mechanic, the core loop, how you win/lose, the look & feel, and the theme + how it fits — so the idea is captured even if I stop here. (If a `CLAUDE.md` already exists, read it and update rather than overwrite; keep any "How to work with me, Claude" section.) Then offer to run **/new-game** to start building it — it'll read this brief and build from it.
 
 Throughout: keep me **scoped small and moving**. If I stall, offer concrete options instead of open-ended questions. Don't lecture on theory — weave MDA in naturally as we go.

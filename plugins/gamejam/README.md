@@ -2,6 +2,6 @@
 
 Beginner-friendly Claude Code commands for building HTML5 games in a 72-hour jam.
 
-**Commands (12):** `/brainstorm` · `/new-game` · `/checkpoint` · `/undo` · `/fix` · `/juice` · `/sound` · `/art` · `/menu` · `/responsive` · `/page` · `/ship`
+**Commands (10):** `/brainstorm` · `/new-game` · `/checkpoint` · `/undo` · `/fix` · `/juice` · `/sound` · `/art` · `/menu` · `/submit`
 
 Install and full docs: see the [marketplace README](../../README.md).

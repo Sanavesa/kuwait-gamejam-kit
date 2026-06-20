@@ -1,8 +1,8 @@
 # Game Jam Kit — the focused Claude Code plugin for beginners
 
-A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam — **idea → build → polish → ship** — into **12 one-word commands** and primes every session into "game-jam mode." No engine, no build tools, no clutter.
+A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam — **idea → build → polish → ship** — into **10 one-word commands** and primes every session into "game-jam mode." No engine, no build tools, no clutter.
 
-> **You only need 5 to start:** `/brainstorm` → `/new-game` → build with `/fix` + `/checkpoint` → `/juice` → `/ship`. The rest are there when you reach for them.
+> **You only need 5 to start:** `/brainstorm` → `/new-game` → build with `/fix` + `/checkpoint` → `/juice` → `/submit`. The rest are there when you reach for them.
 >
 > 👉 **New here? Jump to the [Walkthrough](#walkthrough--your-first-game-start-to-finish) below** — a friendly start-to-finish guide.
 
@@ -17,17 +17,16 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 1. **Find an idea — `/brainstorm <the jam theme>`.** Claude cracks the theme into fresh angles, asks the feeling you want, then suggests small, finishable ideas and helps you pick one.
 2. **Build the first playable version — `/new-game <your idea in one line>`.** Claude writes a complete `index.html`, tells you how to open it, writes a short `CLAUDE.md` "memory" so it remembers your game across sessions, and saves your first checkpoint. **Open it in your browser and play. 🎉**
 3. **Keep its memory current.** Your game already has a `CLAUDE.md` from step 2 — whenever it changes a lot, just say *"update the game brief: the theme is underwater"* so Claude stays in sync.
-4. **The build loop — make it yours.** One small change at a time, in plain words (*"make the pipes spawn slower"*, *"add a score +1 per pipe"*). Play after **every** change. Like it? `/checkpoint score works`. Broke it? `/fix the bird falls through the floor` or `/undo`.
-5. **Make it feel & look good** (where the points are): `/juice` (shake, particles, pops) · `/sound` (SFX + music in code) · `/art` (cohesive look, or wire in an image) · `/menu` (title, pause, game over) · `/responsive` (fit any screen). Run one at a time, play, `/checkpoint`.
+4. **The build loop — make it yours (no command needed).** Adding features is just *talking*: ask in plain words (*"add a double jump"*, *"make the pipes spawn slower"*, *"add a score +1 per pipe"*). Claude keeps each change small, won't break what already works, and reminds you to play + checkpoint — that discipline is built into every session. Play after **every** change. Like it? `/checkpoint score works`. Broke it? `/fix the bird falls through the floor` or `/undo`.
+5. **Make it feel & look good** (where the points are): `/juice` (shake, particles, pops) · `/sound` (SFX + music in code) · `/art` (cohesive look, or wire in an image) · `/menu` (title, pause, game over). Run one at a time, play, `/checkpoint`. *(Crisp scaling to any screen is already built in — ask if you also want touch controls or fullscreen.)*
 6. **Playtest it — with real humans.** Hand it to a friend and *say nothing* — watch where they get confused; that's your fix list. (You're the first playtester too: do the first 30 seconds make sense with no instructions?) Fix what you saw with `/fix` and `/juice`.
-7. **Write your page — `/page`.** Drafts your whole itch.io submission page, ready to paste.
-8. **Ship it — `/ship`.** Zips the game correctly for itch.io + an upload checklist. **Upload early, then keep improving and re-ship.**
+7. **Submit it — `/submit`.** One command does the whole submission: zips the game correctly for itch.io, drafts your full page text (premise, controls, credits) ready to paste, and prints the upload checklist. **Upload early, then keep improving and re-run it.**
 
 > **Stuck?** Blank screen → **F12** → Console → copy the red error → `/fix` (paste it), or drag in a screenshot. A change made it worse → `/undo`, then a smaller step. Still stuck after a few minutes → raise your hand.
 
 ---
 
-## Commands (12)
+## Commands (10)
 
 **Ideate**
 | Command | Does |
@@ -49,13 +48,13 @@ A lean, beginner-first game-dev toolkit for Claude Code. It turns the whole jam 
 | `/sound [what]` | Generates sound effects **and** looping music **in code** (Web Audio) — no downloads. |
 | `/art [what]` | Creates cohesive art with no artist (procedural/code-drawn, palette) **or wires in a file you added**. |
 | `/menu [name]` | Full game flow: title, how-to-play, pause, game over + high score, restart. |
-| `/responsive` | Crisp scaling to any screen + basic touch/mobile + fullscreen (and itch iframe). |
 
 **Ship**
 | Command | Does |
 |---|---|
-| `/page` | Generates your full itch.io page — premise, how-to-play, controls, features, credits, build info. |
-| `/ship` | Zips the game (`index.html` at root) + the submission checklist. |
+| `/submit` | One-stop submission: zips the game (`index.html` at root), writes your full itch.io page text (premise, controls, features, credits), and prints the upload checklist. |
+
+*(Crisp scaling, high-DPI sharpness, and itch-iframe safety are built into `/new-game` and maintained as you build — no separate command needed. Ask any time to add touch controls or fullscreen.)*
 
 > **Playtesting is a human job:** hand the game to someone and watch them play without helping. The kit builds and ships; *people* tell you what's fun.
 
@@ -72,7 +71,7 @@ This folder is a Claude Code **marketplace**. The org publishes it as a public g
 /plugin marketplace add Sanavesa/kuwait-gamejam-kit
 /plugin install gamejam@kuwait-gamejam
 ```
-Done — all 12 commands + the primer are live in every project.
+Done — all 10 commands + the primer are live in every project.
 
 ### Offline / no-GitHub fallback
 Copy `plugins/gamejam/commands/` into your game folder as `.claude/commands/`. Same commands. (A folder of command files is the original, rock-solid mechanism; the plugin just wraps it.)
@@ -97,7 +96,7 @@ kuwait-gamejam-kit/
 └── plugins/
     └── gamejam/                       # the core plugin
         ├── .claude-plugin/plugin.json
-        ├── commands/                  # 12 slash commands (auto-discovered)
+        ├── commands/                  # 10 slash commands (auto-discovered)
         ├── hooks/hooks.json           # SessionStart "game-jam mode" primer
         └── templates/CLAUDE.md        # reference game-brief (/new-game writes this)
 ```

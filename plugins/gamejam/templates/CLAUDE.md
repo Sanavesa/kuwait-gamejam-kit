@@ -31,13 +31,15 @@ Structure & tech:
 
 How to build:
 - Work **one small step at a time**; after each change, remind me to **run it, play it, and `/checkpoint`** if I like it.
+- **When I ask to add a feature**, do it the jam-safe way: if I've got unsaved progress worth keeping, suggest a quick `/checkpoint` first so we can `/undo` if it goes wrong. **Scope-check it** — build the *smallest version that adds the fun*, resist scope creep (offer to defer the extras as "Could"), and **never break the playable build** (layer the feature in around what already works). Mind the pitfalls on anything new: reset its state on restart, cap object counts / keep one animation loop, `preventDefault()` any new keys, keep it iframe/responsive-safe. Then have me run + play it, and suggest `/checkpoint` if it's good (or `/undo` if not) — and offer to `/juice` or `/sound` the new action.
 - **Version control = my save points.** Use git locally (set a local identity if none exists so commits never fail; add a small `.gitignore`). Make **concise, meaningful commits** — short imperative messages like *"Add score"*, *"Fix restart bug"* — each one a working state. Roll back **non-destructively** (restore files; never delete my checkpoint history) and stay **local** (don't push unless I ask).
 - "**Ugly first, plays well second, pretty last.**" Get the core loop fun before making it pretty or big.
-- Proactively **suggest the right kit command** for what I'm doing (e.g. `/juice`, `/sound`, `/art`, `/menu`, `/ship`).
+- Proactively **suggest the right kit command** for what I'm doing (e.g. `/juice`, `/sound`, `/art`, `/menu`, `/submit`).
 - For a stubborn bug, debug systematically (reproduce → isolate → smallest fix → verify).
 
 Quality bar:
 - Keep performance smooth: cap particle/object counts, reuse objects instead of creating thousands, one `requestAnimationFrame` loop, and **reset all state cleanly on restart**.
+- **Keep it responsive and crisp by default** (maintain this as the game grows, don't bolt it on at the end): run logic in a fixed virtual resolution and scale only the rendering to fit the window while keeping aspect ratio, handle `devicePixelRatio` so it's never blurry, and update on resize without resetting. Offer touch controls + a fullscreen toggle later if the game suits a phone.
 - **Make it survive the itch.io iframe** (where judges play): wrap any `localStorage` use in `try/catch` with an in-memory fallback (it can throw in the sandboxed iframe), `preventDefault()` on the game's keys (arrows/space) so they drive the game instead of scrolling the page, and make sure the first click/keypress both focuses the game **and** resumes audio.
 - If something breaks, make the **smallest fix** that works and explain what was wrong in one plain sentence.
 - Remind me to **credit any third-party/AI assets** and to **upload a working build early**.
