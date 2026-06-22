@@ -1,5 +1,5 @@
 ---
-description: Add game feel — screen shake, particles, pops, and sound
+description: Add game feel with shake, particles, pops, and sound
 argument-hint: (optional) which moment to juice, e.g. "when I score"
 ---
 Add "juice" to make the current game feel great. If I named a specific moment in "$ARGUMENTS", focus there; otherwise juice the main actions (scoring, hits, losing).

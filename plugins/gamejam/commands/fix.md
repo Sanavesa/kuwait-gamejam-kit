@@ -1,5 +1,5 @@
 ---
-description: Fix a bug — paste the console error or describe what's wrong
+description: Fix a bug from a console error or a description
 argument-hint: <paste the red console error, or describe the bug>
 ---
 Help me fix this problem with my game:

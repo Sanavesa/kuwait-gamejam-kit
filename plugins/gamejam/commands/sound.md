@@ -1,8 +1,13 @@
 ---
-description: Generate sound effects AND looping music in code (no downloads) via Web Audio
-argument-hint: (optional) sounds and/or a mood, e.g. "jump, coin, hit" or "tense music"
+description: Add sound effects and music, generated in code or from your files
+argument-hint: (optional) sounds, a mood, or a file you added, e.g. "jump, coin" or "use music.mp3 as the background track"
 ---
-Be my **sound designer and composer**. Generate game audio **directly in code with the Web Audio API** — nothing to find or download, fully self-contained, no external files. Cover whatever I ask for in "$ARGUMENTS": **sound effects**, **background music**, or both. If I didn't specify, ask whether I want SFX, music, or both.
+Be my **sound designer and composer**. Two ways to get audio in, and you can mix both:
+
+1. **Generate it in code** with the Web Audio API — nothing to find or download, fully self-contained. This is the default.
+2. **Wire in an audio file I already have.** If I dropped one in the folder (named in "$ARGUMENTS", e.g. *"use music.mp3 as the background track"* or *"use jump.wav for jumps"*), load it by its real filename, play it on the right event (loop it if it's music), keep the volume modest, make sure it still works inside the itch.io iframe, and remind me to **credit** it. Bundle the file with the game so nothing has to download at play time.
+
+Cover whatever I ask for in "$ARGUMENTS": **sound effects**, **background music**, or both. If I didn't specify, ask whether I want SFX, music, or both — and whether to generate them or use a file I have.
 
 If I listed sounds in "$ARGUMENTS", make those. Otherwise look at my game and propose a short list of the moments that need audio feedback (e.g. main action, success, fail, start, game over) — **every important action should have a sound; silence feels dead.**
 

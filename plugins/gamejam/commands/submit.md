@@ -1,5 +1,5 @@
 ---
-description: Get the game submission-ready — zip it for itch.io AND write your page text + checklist
+description: Package your game and write its itch.io page
 argument-hint: (optional) my name/handle, anything to emphasize
 ---
 Get my game fully ready to submit to the itch.io jam — in one pass, produce the **zip**, the **page text**, and the **checklist**.

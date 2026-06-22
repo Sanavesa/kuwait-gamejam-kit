@@ -1,5 +1,5 @@
 ---
-description: Save your current progress as a checkpoint (a save point)
+description: Save your progress as a checkpoint
 argument-hint: (optional) a short name for this save point
 ---
 Save my current progress as a checkpoint (a git commit) — clean and beginner-safe.

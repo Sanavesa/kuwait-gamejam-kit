@@ -1,5 +1,5 @@
 ---
-description: Start a new single-file browser game from a one-line idea
+description: Build a complete browser game from a one-line idea
 argument-hint: <one line describing your game>
 ---
 Create a complete, self-contained HTML5 game in a single file named **index.html** based on this idea:

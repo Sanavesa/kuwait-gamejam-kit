@@ -1,10 +1,10 @@
 ---
-description: Create or wire in game art — procedural sprites, clean shapes, AI, or a file you added
+description: Add game art, generated in code or from your files
 argument-hint: (optional) what you need, e.g. "a player ship" or "use player.png as the player"
 ---
 Be my **art director**. I have no artist and little time. Two goals: the game must look **intentional** (not like a programmer placeholder), and I must **never be blocked** waiting on art.
 
-**If I already dropped an asset file in the folder** (named in "$ARGUMENTS", e.g. *"use player.png as the player"*), just wire it in: use it by its real filename in place of the matching shape/sprite, scale it sensibly, keep it crisp, make sure it still loads when the game runs, and remind me to **credit** it. Otherwise, create art:
+**If I already dropped art files in the folder** (named in "$ARGUMENTS", e.g. *"use player.png as the player"*), just wire them in: load each by its real filename in place of the matching shape/sprite, scale it sensibly, keep it crisp, make sure it still loads when the game runs, bundle the files with the game so nothing has to download at play time, and remind me to **credit** them. Handle whatever I have — single sprites, a spritesheet, or a background image. Otherwise, create art:
 
 If "$ARGUMENTS" says what I need, use it; otherwise ask briefly what elements + vibe I want. Then **recommend** one approach (default to #1 for a jam) and do it:
 

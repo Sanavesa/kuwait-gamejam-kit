@@ -1,5 +1,5 @@
 ---
-description: Go back to your last working checkpoint (undo recent changes)
+description: Roll back to a working checkpoint
 argument-hint: (optional) name of the checkpoint to return to
 ---
 I want to undo my recent changes and go back to a saved checkpoint — do it the **safe, non-destructive** way (never delete my saved history).

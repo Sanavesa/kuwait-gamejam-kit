@@ -1,6 +1,6 @@
 {
   "name": "kuwait-gamejam",
-  "description": "Beginner-friendly game-dev tools for the Kuwait Game Jam — simple slash commands for building HTML5 games with Claude Code.",
+  "description": "Beginner-friendly tools for the Kuwait Game Jam. Simple slash commands for building HTML5 games with Claude Code.",
   "owner": {
     "name": "Kuwait Game Jam",
     "email": "mohammad.alali.1005@gmail.com"
@@ -9,7 +9,7 @@
     {
       "name": "gamejam",
       "source": "./plugins/gamejam",
-      "description": "A focused game-jam toolkit for beginners: 9 commands covering the whole jam (/brainstorm /new-game /checkpoint /undo /fix /juice /sound /art /submit) plus a session primer that keeps Claude in game-jam mode.",
+      "description": "A beginner-friendly game-jam toolkit. Nine simple commands carry you from idea to itch.io, plus a primer that keeps Claude in game-jam mode.",
       "version": "0.1.0",
       "category": "learning",
       "author": {
