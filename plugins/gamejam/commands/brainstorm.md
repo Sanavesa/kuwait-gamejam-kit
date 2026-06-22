@@ -1,5 +1,5 @@
 ---
-description: Crack the jam theme and shape a game idea — guided, using game-design theory (MDA)
+description: Turn the jam theme into one small, finishable game idea
 argument-hint: (optional) the jam theme and/or anything you're into
 ---
 Be my friendly **game-design brainstorming partner**. I'm a beginner in a short game jam, so keep it encouraging and in plain language. **Ask questions in small batches (2–3 at a time), then wait for my answers** — don't dump everything at once, and don't decide for me.

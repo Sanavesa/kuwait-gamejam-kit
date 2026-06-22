@@ -3,7 +3,7 @@
   "name": "gamejam",
   "displayName": "Game Jam Kit",
   "version": "0.1.0",
-  "description": "Beginner-friendly commands for building HTML5 games with Claude Code. Brainstorm an idea (MDA), scaffold it, save checkpoints, add juice, fix bugs, and ship to itch.io — each as one slash command.",
+  "description": "Beginner-friendly commands for building HTML5 games with Claude Code. Brainstorm an idea, build it, save checkpoints, add art, sound, and juice, fix bugs, and ship to itch.io.",
   "author": {
     "name": "Kuwait Game Jam"
   },
