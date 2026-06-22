@@ -13,4 +13,4 @@ Rules:
 - Explain in **one sentence** what was wrong, in plain language.
 - **If a quick fix doesn't hold or the bug is stubborn,** switch to method: **reproduce → hypothesize the cause → isolate the lines → smallest fix → verify nothing else broke.** Watch for the classic beginner-game culprits: state not reset on restart (leftover variables/timers), audio blocked before a user gesture, animation loops stacking (game speeds up after restart), coordinates not scaled for `devicePixelRatio`, using an asset before it loads, or listeners added repeatedly.
 
-Then tell me to run it again and check, and suggest a `/checkpoint` once it's confirmed fixed.
+Then tell me to run it again and check, and suggest a `/save` once it's confirmed fixed.

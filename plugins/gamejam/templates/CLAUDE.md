@@ -29,15 +29,16 @@
 
 Structure & tech:
 - **Default to a single self-contained `index.html`** (HTML + CSS + JS inline) so it runs by just opening the file. **It's OK to grow into multiple files** if the idea needs it — keep `index.html` as the entry point and set up a **simple local preview** (a tiny local server) so it still runs (multi-file opened directly hits CORS). No heavy build tools (npm/bundlers) unless I ask.
-- Prefer simple, readable code; comment lightly. Generate audio/art **in code** when reasonable so nothing has to be downloaded.
+- Prefer simple, readable code; comment lightly.
+- **Art & sound are your job, not a separate step.** Give the game a cohesive, intentional look (a limited palette + consistent shape language) and a sound for every meaningful action — generate both **in code** (code-drawn sprites/scenery; Web Audio with one shared `AudioContext` resumed on first gesture, plus an **M** mute key, and subtle looping music if it fits), or **wire in any art/audio file I drop in the folder**. Keep it self-contained so nothing has to be downloaded, never let me be blocked waiting on assets, and remind me to **credit** any third-party/AI assets.
 
 How to build:
-- Work **one small step at a time**; after each change, remind me to **run it, play it, and `/checkpoint`** if I like it.
-- **When I ask to add a feature**, do it the jam-safe way: if I've got unsaved progress worth keeping, suggest a quick `/checkpoint` first so we can `/undo` if it goes wrong. **Scope-check it** — build the *smallest version that adds the fun*, resist scope creep (offer to defer the extras as "Could"), and **never break the playable build** (layer the feature in around what already works). Mind the pitfalls on anything new: reset its state on restart, cap object counts / keep one animation loop, `preventDefault()` any new keys, keep it iframe/responsive-safe. Then have me run + play it, and suggest `/checkpoint` if it's good (or `/undo` if not) — and offer to `/juice` or `/sound` the new action.
+- Work **one small step at a time**; after each change, remind me to **run it, play it, and `/save`** if I like it.
+- **When I ask to add a feature**, do it the jam-safe way: if I've got unsaved progress worth keeping, suggest a quick `/save` first so we can `/undo` if it goes wrong. **Scope-check it** — build the *smallest version that adds the fun*, resist scope creep (offer to defer the extras as "Could"), and **never break the playable build** (layer the feature in around what already works). Mind the pitfalls on anything new: reset its state on restart, cap object counts / keep one animation loop, `preventDefault()` any new keys, keep it iframe/responsive-safe. Then have me run + play it, and suggest `/save` if it's good (or `/undo` if not) — and offer to `/polish` the new action and give it a sound.
 - **Version control = my save points.** Use git locally (set a local identity if none exists so commits never fail; add a small `.gitignore`). Make **concise, meaningful commits** — short imperative messages like *"Add score"*, *"Fix restart bug"* — each one a working state. Roll back **non-destructively** (restore files; never delete my checkpoint history) and stay **local** (don't push unless I ask).
 - **Keep this brief current yourself.** When a change meaningfully alters what's written above (the core mechanic, controls, win/lose, look & feel, or theme), update this `CLAUDE.md` as part of that change and tell me in one line — don't wait for me to ask. Skip it for small tweaks; the brief should stay short and stable, not churn every turn.
 - "**Ugly first, plays well second, pretty last.**" Get the core loop fun before making it pretty or big.
-- Proactively **suggest the right kit command** for what I'm doing (e.g. `/juice`, `/sound`, `/art`, `/submit`).
+- Proactively **suggest the right kit command** for what I'm doing (e.g. `/polish`, `/submit`), and add art/sound yourself as the game needs it.
 - For a stubborn bug, debug systematically (reproduce → isolate → smallest fix → verify).
 
 Quality bar:

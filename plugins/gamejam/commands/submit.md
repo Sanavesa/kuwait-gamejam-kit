@@ -4,7 +4,7 @@ argument-hint: (optional) my name/handle, anything to emphasize
 ---
 Get my game fully ready to submit to the itch.io jam — in one pass, produce the **zip**, the **page text**, and the **checklist**.
 
-**1. Quick pre-flight.** Make sure the game actually runs (no console errors), and save a `/checkpoint` first so the submitted version is saved. If we haven't tried it recently, remind me to **play a full round myself first** (and hand it to someone else to play) so I catch anything broken before judges do.
+**1. Quick pre-flight.** Make sure the game actually runs (no console errors), and run `/save` first so the submitted version is saved. If we haven't tried it recently, remind me to **play a full round myself first** (and hand it to someone else to play) so I catch anything broken before judges do.
    - **Am I on track to finish?** Is the core loop playable end-to-end *right now* (start → play → win/lose → restart)? If not, that's the only priority — everything else waits. If I'm short on time, help me sort what's left into **"needed to be complete"** vs **"nice to have,"** name the smallest version that's still fun, and flag anything risky to **cut or `/undo`**. Either way: **upload a working build now**, then keep polishing and re-submit.
 
 **2. Build the zip.**
@@ -16,7 +16,7 @@ Get my game fully ready to submit to the itch.io jam — in one pass, produce th
 - **Title** + a punchy **one-line tagline**.
 - **Premise / pitch** (2–4 sentences): what the game is, the hook, and how it fits the **theme** — written to make a judge want to hit Play. No fluff.
 - **How to play** — the goal in one line, then a clear **controls** list (keyboard *and* touch if supported). Cover how to start, the objective, and how you win/lose.
-- **Features** — 3–5 short bullets highlighting what's cool (mechanics, juice, audio, modes).
+- **Features** — 3–5 short bullets highlighting what's cool (mechanics, game feel, audio, modes).
 - **Tips** (optional, 1–2 lines) if the game needs them to be enjoyed.
 - **Credits** — me as creator + role, plus **every third-party / AI asset** with its source and license. Scan the project and my notes and **flag anything uncredited as a TO-DO** (crediting is required by the rules).
 - **Made with / build info** — engine-free HTML5 + Claude Code, jam name, and the date, plus any tools used.
