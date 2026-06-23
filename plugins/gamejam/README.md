@@ -7,8 +7,8 @@ Beginner-friendly Claude Code commands for building HTML5 games in a 72-hour jam
 | Command | What it does |
 |---|---|
 | `/new-game <idea>` | Brainstorm the idea with you, then build a complete single-file browser game and set up your first save point. |
-| `/save [name]` | Save your progress as a checkpoint you can return to. |
-| `/undo [name]` | Roll back to a working checkpoint. |
+| `/save [label]` | Save your progress as a versioned checkpoint (`v1`, `v2`, ...) with an optional label. |
+| `/undo [version]` | Roll back to a working checkpoint (e.g. `v3`), after confirming with you first. |
 | `/fix <error>` | Fix a bug from a console error or a description. |
 | `/submit` | Package the game for itch.io and write your page text. |
 

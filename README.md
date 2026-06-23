@@ -52,8 +52,8 @@ Stuck at any point? See [Troubleshooting](#troubleshooting).
 | Command | Does |
 |---|---|
 | `/new-game <idea/theme>` | Brainstorms the idea with you (core mechanic, feeling, theme fit), then scaffolds a playable single-file `index.html`, writes a `CLAUDE.md` game brief, sets up git, and saves the first checkpoint. |
-| `/save [name]` | Saves a git "save point" (auto-names it from what changed if you skip the name). |
-| `/undo [name]` | Rolls back to the last checkpoint, or a named one. |
+| `/save [label]` | Saves a git "save point" as an auto-incrementing version (`v1`, `v2`, ...) plus your optional label. |
+| `/undo [version]` | Rolls back to a checkpoint (e.g. `v3`, or your last working save), after confirming with you first. |
 | `/fix <error/bug>` | Paste a console error or describe the bug. Makes the smallest fix, escalating to systematic debugging if needed. |
 
 **Make it good** (no command needed)
