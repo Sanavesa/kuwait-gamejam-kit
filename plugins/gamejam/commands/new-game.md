@@ -24,6 +24,14 @@ Keep questions **about the game**, not about me. Lock down:
 - Use a `<canvas>`, and keep the code clean and lightly commented.
 - **Responsive and crisp from the start** (a default, not an afterthought): run the game logic at a **fixed virtual resolution** and scale only the rendering to fit the window, keeping the **aspect ratio** (letterbox/pillarbox, never stretch) so speeds don't change with screen size. Handle **`devicePixelRatio`** so it stays sharp on high-DPI screens. Update on **resize / orientation change without resetting** the game, and make sure it fits inside an **itch.io iframe**.
 - **A "click / press to start" gate** for the first interaction: it begins the game, grabs keyboard focus, and later lets audio play inside the iframe.
+- **Always auto-focus the window so the itch.io iframe receives input.** Call `window.focus()` on load and again on any click inside the game, e.g.:
+  ```html
+  <script>
+    window.addEventListener('load', () => window.focus());
+    window.addEventListener('click', () => window.focus());
+  </script>
+  ```
+  (Use `addEventListener`, not `window.onload`/`window.onclick`, so it never clobbers other handlers.) Otherwise keyboard input is silently dropped until the player clicks, which judges often won't do.
 - **`preventDefault()` on the game's keys** (arrows, space) so they drive the game instead of scrolling the page.
 - Keep visuals **clean and simple**; polish and game feel come later, once the core loop is fun.
 
