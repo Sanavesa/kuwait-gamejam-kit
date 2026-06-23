@@ -8,7 +8,7 @@ $ARGUMENTS
 
 If a **`CLAUDE.md` game brief already exists** (e.g. from a past session), read it first and build from it, combined with the idea above, then skip straight to building.
 
-**First, a quick brainstorm, then build.** Don't build blindly. Open a short dialogue to shape the idea, then make the game. Keep it tight: a few small batches of questions (2–3 at a time), wait for my answers between them, and **always offer answer options as a short lettered list (a–d) with a "something else" escape**, and I can still type my own.
+**First, a quick brainstorm, then build.** Don't build blindly. Open a short dialogue to shape the idea, then make the game. Keep it tight: a few small batches of questions (2–3 at a time), wait for my answers between them, and **always offer answer options as a short lettered list (a–d) with a "something else" escape**, and I can still type my own. **Let me pick more than one** where it makes sense (e.g. a feeling can be a blend like *(a)+(c)*): say so on those questions and accept multiple letters in my reply.
 
 Keep questions **about the game**, not about me. Lock down:
 - the **one core mechanic**: the single thing I do over and over;
@@ -29,6 +29,6 @@ Keep questions **about the game**, not about me. Lock down:
 
 **After building it:**
 - Tell me exactly **how to run it** and what the **controls** are.
-- Make sure a short **`CLAUDE.md` game brief** exists: create it, or refresh an existing one (read it and update rather than overwrite; keep any "How to work with me, Claude" section). Cover what the game is, the one core mechanic, controls, look & feel, theme, and win/lose, plus a brief **"How to work with me, Claude"** section (build in small steps; default to a single self-contained `index.html`; keep it iframe-safe; generate art and audio in code; treat git commits as save points; offer numbered options when asking me questions; keep this brief in sync yourself). Claude reads this file every session, so I never have to re-explain. Keep it short, and tell me I can update it anytime with *"update the game brief: …"*.
+- Make sure a short **`CLAUDE.md` game brief** exists: create it, or refresh an existing one (read it and update rather than overwrite; keep any "How to work with me, Claude" section). Cover what the game is, the one core mechanic, controls, look & feel, theme, and win/lose, plus a brief **"How to work with me, Claude"** section (build in small steps; default to a single self-contained `index.html`; keep it iframe-safe; generate art and audio in code; treat git commits as save points; offer numbered options when asking me questions and let me pick more than one where it fits; keep this brief in sync yourself). Claude reads this file every session, so I never have to re-explain. Keep it short, and tell me I can update it anytime with *"update the game brief: …"*.
 - **Set up version control:** run `git init`; if no git identity is set, configure a **local** one (`git config --local user.name`/`user.email`) so commits never fail; add a small `.gitignore` (OS/editor junk); then make the first commit (including `index.html`, `CLAUDE.md`, and `.gitignore`) with a clear message like `Initial game`. Keep everything **local**; don't push.
 - Finally, suggest I **open it and play**, then run `/polish` when I want it to feel good, or just ask for the next feature.
