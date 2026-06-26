@@ -9,8 +9,8 @@
     {
       "name": "gamejam",
       "source": "./plugins/gamejam",
-      "description": "A beginner-friendly game-jam toolkit. Five simple commands carry you from idea to itch.io, plus an always-on primer that handles art, sound, and polish and keeps Claude in game-jam mode.",
-      "version": "0.4.7",
+      "description": "A beginner-friendly game-jam toolkit. Four simple commands carry you from idea to itch.io, plus an always-on primer that handles art, sound, polish, and bug-fixing and keeps Claude in game-jam mode.",
+      "version": "0.5.0",
       "category": "learning",
       "author": {
         "name": "Kuwait Game Jam"
