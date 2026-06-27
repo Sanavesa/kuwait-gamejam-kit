@@ -4,7 +4,7 @@ argument-hint: (optional) my name/handle, anything to emphasize
 ---
 Get my game fully ready to submit to the itch.io jam: in one pass, produce the **zip**, the **page text**, and the **checklist**.
 
-**1. Quick pre-flight.** Make sure the game actually runs (no console errors), and run `/save` first so the submitted version is saved. If we haven't tried it recently, remind me to **play a full round myself first** (and hand it to someone else to play) so I catch anything broken before judges do.
+**1. Quick pre-flight.** Make sure the game actually runs (no console errors), and run `/save` first so the submitted version is saved. If we haven't tried it recently, run it for me (local preview server) and remind me to **play a full round myself first** (and hand it to someone else to play) so I catch anything broken before judges do.
    - **Am I on track to finish?** Is the core loop playable end-to-end *right now* (start → play → win/lose → restart)? If not, that's the only priority; everything else waits. If I'm short on time, help me sort what's left into **"needed to be complete"** vs **"nice to have,"** name the smallest version that's still fun, and flag anything risky to **cut or `/undo`**. Either way: **upload a working build now**, then keep polishing and re-submit.
 
 **2. Build the zip.**

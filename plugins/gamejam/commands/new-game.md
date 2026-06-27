@@ -8,11 +8,11 @@ $ARGUMENTS
 
 If a **`CLAUDE.md` game brief already exists** (e.g. from a past session), read it first and build from it, combined with the idea above, then skip straight to building.
 
-**First, a quick brainstorm, then build.** Don't build blindly. Open a short dialogue to shape the idea, then make the game. Keep it tight: a few small batches of questions (2–3 at a time), wait for my answers between them, and **always offer answer options as a short lettered list (a–d) with a "something else" escape**, and I can still type my own. **Let me pick more than one** where it makes sense (e.g. a feeling can be a blend like *(a)+(c)*): say so on those questions and accept multiple letters in my reply.
+**First, a quick brainstorm, then build.** Don't build blindly. Open a short dialogue to shape the idea, then make the game. Keep it tight: a few small batches of questions (2–3 at a time), wait for my answers between them, and **always offer answer options as a short numbered list (2–4 options, recommended default first) with a "something else" escape**, and I can still type my own. **Let me pick more than one** where it makes sense (e.g. a feeling can be a blend like *1+3*): say so on those questions and accept multiple numbers in my reply.
 
 Keep questions **about the game**, not about me. Lock down:
 - the **one core mechanic**: the single thing I do over and over;
-- the **feeling** I'm going for (e.g. *(a)* tense challenge · *(b)* cozy/relaxing · *(c)* satisfying movement · *(d)* discovery · *(e)* score-chasing);
+- the **feeling** I'm going for (e.g. *1.* tense challenge · *2.* cozy/relaxing · *3.* satisfying movement · *4.* discovery · *5.* score-chasing);
 - **win/lose** and the **look & feel** (palette, vibe);
 - if there's a jam theme, **how it visibly shows up in the mechanic** (not just the art).
 
@@ -36,8 +36,8 @@ Keep questions **about the game**, not about me. Lock down:
 - Keep visuals **clean and simple**; polish and game feel come later, once the core loop is fun.
 
 **After building it:**
-- Tell me exactly **how to run it** and what the **controls** are.
+- **Run it for me and tell me how I ran it** (no command needed): start a tiny local preview server (e.g. `python3 -m http.server`) and give me the `http://localhost` URL to open, rather than telling me to double-click the file. Tell me the **controls**.
 - Make sure a short **`CLAUDE.md` game brief** exists: create it, or refresh an existing one (read it and update rather than overwrite; keep any "How to work with me, Claude" section). Cover what the game is, the one core mechanic, controls, look & feel, theme, and win/lose, plus a brief **"How to work with me, Claude"** section (build in small steps; default to a single self-contained `index.html`; keep it iframe-safe; generate art and audio in code, or wire in my own files from the `assets/` folder referenced as `@assets/name`; offer a polish/juice menu once the core loop is fun; treat git commits as save points; offer numbered options when asking me questions and let me pick more than one where it fits; keep this brief in sync yourself). Claude reads this file every session, so I never have to re-explain. Keep it short, and tell me I can update it anytime with *"update the game brief: …"*.
 - **Create an empty `assets/` folder** (with a `.gitkeep` placeholder so git tracks it). This is the one place I add my own art/sound: I drop a file in `assets/` and reference it as `@assets/name.png` when I ask, and you wire it into the game. Otherwise you generate art and sound in code.
 - **Set up version control:** run `git init`; if no git identity is set, configure a **local** one (`git config --local user.name`/`user.email`) so commits never fail; add a small `.gitignore` (OS/editor junk, plus `submission/` since `/submit` regenerates that build output); then make the first commit (including `index.html`, `CLAUDE.md`, `.gitignore`, and `assets/.gitkeep`) as the first version: `v1: Initial game` (so later `/save` checkpoints continue v2, v3, ...). Keep everything **local**; don't push.
-- Finally, suggest I **open it and play**, then just ask when I want it to feel good (you'll offer a polish/juice menu) or for the next feature.
+- Finally, suggest I **open that URL and play it**, then just ask when I want it to feel good (you'll offer a polish/juice menu) or for the next feature.
