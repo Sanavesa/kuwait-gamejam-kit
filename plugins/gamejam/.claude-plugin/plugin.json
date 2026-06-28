@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "gamejam",
   "displayName": "Game Jam Kit",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "Beginner-friendly commands for building HTML5 games with Claude Code. Brainstorm an idea, build it, save checkpoints, fix bugs, and ship to itch.io, with art, sound, and polish handled automatically as you build.",
   "author": {
     "name": "Kuwait Game Jam"

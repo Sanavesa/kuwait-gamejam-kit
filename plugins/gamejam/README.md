@@ -11,6 +11,6 @@ Beginner-friendly Claude Code commands for building HTML5 games in a 72-hour jam
 | `/undo [version/label]` | Roll back to a checkpoint by version (e.g. `v3`), by label, or your last save if omitted, after confirming with you first. |
 | `/submit` | Package the game for itch.io and write your page text. |
 
-**Running the game, art, sound, polish, and bug-fixing need no command:** just ask (or paste an error / let Claude offer). When you want to see the game, Claude starts a local preview server and hands you the `http://localhost` URL (so multi-file games and audio work). It also generates art and sound in code, adds game-feel juice from a menu, and fixes bugs from a console error or your description, as part of building, every session. To use **your own** asset, drop the file in the **`assets/` folder** and reference it as `@assets/name.png` when you ask.
+**Art, sound, polish, and bug-fixing need no command:** just ask (or paste an error / let Claude offer). It generates art and sound in code, adds game-feel juice from a menu, and fixes bugs from a console error or your description, as part of building, every session. To **play**, just open `index.html` in your browser (double-click it). To use **your own** asset, drop the file in the **`assets/` folder** and reference it as `@assets/name.png` when you ask.
 
 Install and full docs: see the [marketplace README](../../README.md).
